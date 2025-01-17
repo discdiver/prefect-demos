@@ -5,10 +5,10 @@ These demos are meant to be end-to-end examples showcasing how multiple features
 
 Get inspired, learn best practices, and discover innovative ways to leverage Prefect in your data projects!
 
-# Flows
+## Flows
 Demos separated by project.
 
-#### Datalake usage
+### Datalake usage
 - [datalake_listener.py](flows/aws/datalake/datalake_listener.py)
 
     *Processes Near Earth Object (NEO) data from an AWS S3 bucket, filters for potentially hazardous objects, flattens the data structure, and then uploads the results back to S3 in CSV format*
@@ -21,9 +21,9 @@ Demos separated by project.
 
     *Automates the deployment of two Prefect workflows for data processing: `datalake_listener`, which triggers on AWS S3 object creation, and `fetch_neo_by_date`, which fetches Near Earth Object data daily, using a Docker image from an ECR repository for execution on an ECS push work pool*
 
-# Get events subscriber
+### Get events subscriber
 
-Code for subscribing to Prefect events.
+Subscribe to Prefect events and print out the events as they occur.
 
-- [get_events_subscriber.py](get_events_subscriber.py)
+- [get_events_subscriber.py](flows/get_events_subscriber.py)
 
